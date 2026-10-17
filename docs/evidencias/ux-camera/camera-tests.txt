@@ -1,0 +1,21 @@
+test_busy_frame_is_discarded_without_wait (test_camera_ux.CameraContracts.test_busy_frame_is_discarded_without_wait) ... ok
+test_error_clears_stale_result_and_unlocks_engine (test_camera_ux.CameraContracts.test_error_clears_stale_result_and_unlocks_engine) ... ok
+test_manual_capture_when_stream_is_stopped (test_camera_ux.CameraContracts.test_manual_capture_when_stream_is_stopped) ... ok
+test_scores_resolution_interval_and_no_images_in_state (test_camera_ux.CameraContracts.test_scores_resolution_interval_and_no_images_in_state) ... ok
+test_sessions_are_isolated_and_snapshots_are_copies (test_camera_ux.CameraContracts.test_sessions_are_isolated_and_snapshots_are_copies) ... ok
+test_start_stop_and_null (test_camera_ux.CameraContracts.test_start_stop_and_null) ... ok
+test_stop_discards_inflight_result (test_camera_ux.CameraContracts.test_stop_discards_inflight_result) ... ok
+test_models_unchanged (test_camera_ux.OnnxUXIntegration.test_models_unchanged) ... ok
+test_real_gradio_events_upload_save_history_and_reset (test_camera_ux.OnnxUXIntegration.test_real_gradio_events_upload_save_history_and_reset) ... /usr/lib/python3.12/asyncio/base_events.py:726: ResourceWarning: unclosed event loop <_UnixSelectorEventLoop running=False closed=False debug=False>
+  _warn(f"unclosed event loop {self!r}", ResourceWarning, source=self)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.12/asyncio/base_events.py:726: ResourceWarning: unclosed event loop <_UnixSelectorEventLoop running=False closed=False debug=False>
+  _warn(f"unclosed event loop {self!r}", ResourceWarning, source=self)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_real_onnx_all_reserved_images_and_camera_update (test_camera_ux.OnnxUXIntegration.test_real_onnx_all_reserved_images_and_camera_update) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.843s
+
+OK

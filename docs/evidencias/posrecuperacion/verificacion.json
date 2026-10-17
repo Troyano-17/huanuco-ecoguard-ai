@@ -1,0 +1,482 @@
+{
+  "original": {
+    "epocas": 100,
+    "accuracy_test": 0.9130434782608695,
+    "clases_matriz": [
+      "agua_contaminada",
+      "aire_contaminado",
+      "suelo_contaminado"
+    ],
+    "particiones": {
+      "train": 105,
+      "test": 23,
+      "val": 23
+    },
+    "distribucion_por_clase": {
+      "train": {
+        "aire_contaminado": 49,
+        "agua_contaminada": 26,
+        "suelo_contaminado": 30
+      },
+      "test": {
+        "aire_contaminado": 10,
+        "agua_contaminada": 6,
+        "suelo_contaminado": 7
+      },
+      "val": {
+        "aire_contaminado": 10,
+        "agua_contaminada": 6,
+        "suelo_contaminado": 7
+      }
+    },
+    "best_sha256": "57b2194e8cfb26de44eb93960193392965e4c46be3c75f8f22c81b5a37b7ed32"
+  },
+  "original_files": {
+    "app_gradio.py": {
+      "bytes": 2611,
+      "sha256": "5c4fcdc75e7423f2666e3a14342c8847cabb38fa561ebab95f3d82a5cb1613dd"
+    },
+    "entrenar_colab.py": {
+      "bytes": 28291,
+      "sha256": "0439a9158e1d26a28a1fd4e31b322c23cfe479c9331959f9b06401883efd674f"
+    },
+    "matriz_confusion.csv": {
+      "bytes": 132,
+      "sha256": "da81f4b22063523ea446680c57bc5bdb71dfc82cc92c1ff04e6ac728a2896563"
+    },
+    "matriz_confusion.png": {
+      "bytes": 59256,
+      "sha256": "524fc51acbff9c4aaad312fa53f8a79453db66431b0eeb0d513ba38ce7b1997f"
+    },
+    "metricas_test.json": {
+      "bytes": 1060,
+      "sha256": "b35dd441b49c06f494978448b3674f5cdb2066f48e3a5c47ed2acb4f6eae8819"
+    },
+    "particiones.csv": {
+      "bytes": 27698,
+      "sha256": "95ee003850c6053ec3e376dc0ce095d4102bec3c6c697f6f3dcda9691cae9cd8"
+    },
+    "persistencia_colab.py": {
+      "bytes": 8900,
+      "sha256": "745533c3339aff93e1cbd8c00ef87b95ca05defabdb3318f7a430c7d1e42740c"
+    },
+    "predicciones_test.csv": {
+      "bytes": 2485,
+      "sha256": "73cb9cadea3e7ff23f465a3a319d7acdd5e471d69309477ee51e369a85931612"
+    },
+    "prueba/args.yaml": {
+      "bytes": 1734,
+      "sha256": "d48ca7435ebb9bfc55798bf18396c48c3fb03675c0cb9134fd2930c60064b5ea"
+    },
+    "prueba/results.csv": {
+      "bytes": 213,
+      "sha256": "3af109767879efc19cf1c6df11ef9edba0dad519ff3f5ecc9f07f4aa44a46368"
+    },
+    "recuperacion.pt": {
+      "bytes": 15593367,
+      "sha256": "c909c956f2627dbdbf2faed453ff8e77039439212d4c4226c6fc8048a9b73c4f"
+    },
+    "run-config.json": {
+      "bytes": 875,
+      "sha256": "a9d7cfba3b24f91da222f30983194c39b16f4b80b2ec567282d39dcf1d1fb79f"
+    },
+    "runtime-state.pt": {
+      "bytes": 15061,
+      "sha256": "9fb0a690af6cd51a2cdaf6d1fb9eb5bf928a891b750f9b140a4992a40b5ba2a4"
+    },
+    "smoke-ok.json": {
+      "bytes": 126,
+      "sha256": "c1b418fc54fa3d465fc7930a5d97e523f128168a7481c841e6363e55abd52309"
+    },
+    "train100/args.yaml": {
+      "bytes": 1742,
+      "sha256": "cbe3a8891a1e3ea2d113e659568a683e12269d3dea99aec5454936d2224d57c9"
+    },
+    "train100/results.csv": {
+      "bytes": 6710,
+      "sha256": "8c886cbec24dc3a273fe58d7127f5c96da28bc6b48972a52341bef95157de6ce"
+    },
+    "train100/results.png": {
+      "bytes": 141141,
+      "sha256": "4702208ec020c3916af519feab8c71dac36a4dfe6ce63f9d9592fea8fecb577a"
+    },
+    "train100/weights/best.pt": {
+      "bytes": 3195010,
+      "sha256": "57b2194e8cfb26de44eb93960193392965e4c46be3c75f8f22c81b5a37b7ed32"
+    },
+    "train100/weights/epoch0.pt": {
+      "bytes": 15586711,
+      "sha256": "b307ce23865f9f0924a869f046c12d8b47773a2c73757156f0069e3f99cb6583"
+    },
+    "train100/weights/epoch10.pt": {
+      "bytes": 15587415,
+      "sha256": "a8f9ecf0b3bce4eea5382517f84b0a9999f57fc843e429dea4d39e7621bdae4f"
+    },
+    "train100/weights/epoch20.pt": {
+      "bytes": 15588055,
+      "sha256": "cdc5a2d0a2597d90787811aa0692f5628df74ccd6b6bc46b506caa3d4342f6c2"
+    },
+    "train100/weights/epoch30.pt": {
+      "bytes": 15588759,
+      "sha256": "aa8b053cb2356542e9cfc1ae67bd83839976a68a9932d24eb0cc3ec28227ef31"
+    },
+    "train100/weights/epoch40.pt": {
+      "bytes": 15589399,
+      "sha256": "7318733c00c9ae6cfded32e647617128789a610c1c6314b3f81c6dac0d58ec89"
+    },
+    "train100/weights/epoch50.pt": {
+      "bytes": 15590103,
+      "sha256": "7a35b4c4dd28f0b40b54ae905aa311eaa9f8f48ec92eb3805f7d8ee98156808b"
+    },
+    "train100/weights/epoch60.pt": {
+      "bytes": 15590743,
+      "sha256": "32a50a41775673f103629ce41c621ae9c986a13b3f9dac51e3bb80930fc73cd9"
+    },
+    "train100/weights/epoch70.pt": {
+      "bytes": 15591447,
+      "sha256": "b2cdf716b98f8378a77b6dc6c65c4e68631b863835db422f8f68a9e225893f5b"
+    },
+    "train100/weights/epoch80.pt": {
+      "bytes": 15592087,
+      "sha256": "281d1b6734af0a53e122f211a9698e29c1cf832c4c50286eec867f0790e17aad"
+    },
+    "train100/weights/epoch90.pt": {
+      "bytes": 15592727,
+      "sha256": "3b134a4dfe9e4a6ed55a84630b2e7f1bc56fbe8e7cc72ff5f868376f7d620530"
+    },
+    "train100/weights/last.pt": {
+      "bytes": 3195010,
+      "sha256": "005ecb8bd05c6f2bfba95d3deccdc2f9c112840fea398aae07807d15c8e8d72f"
+    },
+    "versiones.txt": {
+      "bytes": 14274,
+      "sha256": "5fcc05fe1f92b2b962d45ec5bce9563f8341ecca315e01ed2f35147c6778aae5"
+    }
+  },
+  "delivery_manifest_files": 83,
+  "archive_sha256": "ac10f88a010ef3fd0a7480cd984482496c77aa486e2548ff740c6da2fbf6f284",
+  "test_photos": [
+    {
+      "id": "ECO-005",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-005.png",
+      "sha256": "6c6a1f572c419232517b34d42b44e930ff40e345998d554efc79ce2218204cac",
+      "pixel_sha256": "72266560a4b073612a71b7abb01286926f183721e7c87e325e4dcae4e85c0ee1",
+      "size": [
+        1200,
+        900
+      ]
+    },
+    {
+      "id": "ECO-019",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-019.png",
+      "sha256": "bb365f252283a8e6d1ea5c2d59e4e2449a69e2029dde09b03ce1bcb166a4018d",
+      "pixel_sha256": "ef2a1f7d2815deaa12d8d13ec470798303573a722f94acc28c33b9e131b16d04",
+      "size": [
+        677,
+        453
+      ]
+    },
+    {
+      "id": "ECO-027",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-027.png",
+      "sha256": "568741bee7cee09685ab73d968d5bdaedeeef9821717d0986e4433a566124c31",
+      "pixel_sha256": "2db62be76ba2d4294478049389516e1e5c550b645be935dcbef24c1a14e7962c",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "id": "ECO-028",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-028.png",
+      "sha256": "aedba9ea9d9168a284cf9d12ebe1bae3ee28e9d474b0ef5c03a352b5ee498b11",
+      "pixel_sha256": "3d52e7e3e760ccd162a3c35eabdaeb6dfe06af745e6ab0a74ddbc77ca2c6210c",
+      "size": [
+        739,
+        415
+      ]
+    },
+    {
+      "id": "ECO-031",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-031.png",
+      "sha256": "d44741d77c941af461bebf7701087c38542ccaec23dc5de3ff0ce0c6cd98c435",
+      "pixel_sha256": "87b6f7eebfaeae99f9fbd848245fe887db4fe214c33140666c01ed7cc7e96bdd",
+      "size": [
+        515,
+        388
+      ]
+    },
+    {
+      "id": "ECO-032",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-032.png",
+      "sha256": "b1cf1a389077d6ec7ebb2cdb3382ca0726f65d5443e02bfef7c24f5dd85722c0",
+      "pixel_sha256": "623f9c3e04333b2d8d1eb6af6d6a9a871c00a185ed6b9d26fe532206c92ae862",
+      "size": [
+        648,
+        473
+      ]
+    },
+    {
+      "id": "ECO-035",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-035.png",
+      "sha256": "1121b301f024a81c3278043a2699b4c82117d2ceb56d790a7f251f9b8929311d",
+      "pixel_sha256": "1aa0905642bc1a6556ddfa808cc2e33e594a312e6a52f7c34e8d544f7fd848e0",
+      "size": [
+        741,
+        414
+      ]
+    },
+    {
+      "id": "ECO-040",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-040.png",
+      "sha256": "20343f8e317b76c3fb2f38e50d3b9b68ddcc76289e377e5b0c3d7fd76c35fc74",
+      "pixel_sha256": "26651a6d7cf844ae2598f56e294b29c7dba43bd799c2dc7b4ed818ebd8fc38a6",
+      "size": [
+        678,
+        452
+      ]
+    },
+    {
+      "id": "ECO-056",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-056.png",
+      "sha256": "95ac8b6e9cc3475c1b4727edec1504b0a30e23c583eacc6ab6ef8cb191e86e38",
+      "pixel_sha256": "1b5c5868e63ce22ddb350aed51174d1f2a6557c7021561798d6a2534d33521cd",
+      "size": [
+        500,
+        396
+      ]
+    },
+    {
+      "id": "ECO-070",
+      "class": "aire_contaminado",
+      "path": "revision_ecoguard/revision/aire_contaminado/ECO-070.png",
+      "sha256": "c0ec2f711d5464ff6700086e1339abce97d8f9b62f7289d5687fd7e4b77326e8",
+      "pixel_sha256": "cde456c3d2558f15ad21c49c04535d0d52697e1f8dfa11b4a48382380a0a31b6",
+      "size": [
+        696,
+        392
+      ]
+    },
+    {
+      "id": "ECO-082",
+      "class": "agua_contaminada",
+      "path": "revision_ecoguard/revision/agua_contaminada/ECO-082.png",
+      "sha256": "f89a0b9baf72fe9a8715f46a09c8ad25425fb7c503eabac89f9fd3cdb8e069bd",
+      "pixel_sha256": "141f9aef9878fa54e468655f145c1d3252f2d3f1947b65733c190f3820b17fb1",
+      "size": [
+        576,
+        324
+      ]
+    },
+    {
+      "id": "ECO-088",
+      "class": "agua_contaminada",
+      "path": "revision_ecoguard/revision/agua_contaminada/ECO-088.png",
+      "sha256": "ae94da43d382de8cecb5b925dbd1975603c738538d92ef37c2c7a3ba24480a93",
+      "pixel_sha256": "b0807148cb9da7b8bdeb61617ef6db8fd7b0c6ff7d1a19a7172824d0cdbfa819",
+      "size": [
+        738,
+        414
+      ]
+    },
+    {
+      "id": "ECO-092",
+      "class": "agua_contaminada",
+      "path": "revision_ecoguard/revision/agua_contaminada/ECO-092.png",
+      "sha256": "d178ea0f93999794c29109942af9ae58967a146e1203219a4f870daa80dd496a",
+      "pixel_sha256": "f3674ae632c10fb4a0c9666e91cb95af94c055461552915b92fb880a70c4abea",
+      "size": [
+        576,
+        339
+      ]
+    },
+    {
+      "id": "ECO-105",
+      "class": "agua_contaminada",
+      "path": "revision_ecoguard/revision/agua_contaminada/ECO-105.png",
+      "sha256": "d03f3b0acb0b5e47a0db85e539a69e444edf667a53a725ccc0747a7a2d525083",
+      "pixel_sha256": "fd64a29c5f3d347a9741927cc38944f5f7e3d390bcd5a831ea0645d290511f04",
+      "size": [
+        310,
+        163
+      ]
+    },
+    {
+      "id": "ECO-108",
+      "class": "agua_contaminada",
+      "path": "revision_ecoguard/revision/agua_contaminada/ECO-108.png",
+      "sha256": "6e611aa8d0c750b0977b59f7ddc9db74b2afdd50cfc2fda075b00ccba2b5043e",
+      "pixel_sha256": "872c84eb4431bf3590ec9a398b9dbef1bfd869a67fa85b1bde35410bd5bd5ff8",
+      "size": [
+        547,
+        365
+      ]
+    },
+    {
+      "id": "ECO-112",
+      "class": "agua_contaminada",
+      "path": "revision_ecoguard/revision/agua_contaminada/ECO-112.png",
+      "sha256": "896a5c036665b3793dfd099b356c25e8b5c5dbff98fcfbfa20e7bfffc4226cb2",
+      "pixel_sha256": "26fa4764ed72952c4f79db8cb37365cc39bb10a8c3aa25c3c638f5b77cfb5361",
+      "size": [
+        576,
+        426
+      ]
+    },
+    {
+      "id": "ECO-122",
+      "class": "suelo_contaminado",
+      "path": "revision_ecoguard/revision/suelo_contaminado/ECO-122.png",
+      "sha256": "800b40a5180ea1cc0e294e0bb2db78d34b4ee44e9805cefef2f73c8a9d698ef7",
+      "pixel_sha256": "89735413ab9e51eafa977ac5c9f5acfde8ed14c18072cdeef46f6892e84ea192",
+      "size": [
+        1600,
+        1167
+      ]
+    },
+    {
+      "id": "ECO-127",
+      "class": "suelo_contaminado",
+      "path": "revision_ecoguard/revision/suelo_contaminado/ECO-127.png",
+      "sha256": "341ccc6e4a54eb77360b1f7dcda28d73f87ba3027fd4f9b788f8da1d26ea7fa8",
+      "pixel_sha256": "7c660a6e1eaa089dc6683c41dd960909a4a5bedaabe8ee2fd2bbb179ebe035c1",
+      "size": [
+        603,
+        331
+      ]
+    },
+    {
+      "id": "ECO-142",
+      "class": "suelo_contaminado",
+      "path": "revision_ecoguard/revision/suelo_contaminado/ECO-142.png",
+      "sha256": "91e9fc3dd6ffad86505b8d8a412a7a2faa0bb8f79d2bc2d14ceeb47ca828ab9f",
+      "pixel_sha256": "6565d14d2c2490892d2c771e14a0b76213ac57581597c1fbb407138c4beeeedd",
+      "size": [
+        415,
+        739
+      ]
+    },
+    {
+      "id": "ECO-151",
+      "class": "suelo_contaminado",
+      "path": "revision_ecoguard/revision/suelo_contaminado/ECO-151.png",
+      "sha256": "9fc85be387b4caac18e09391d048abc5ad84905fc444f1e6dcac018fd3e0c84b",
+      "pixel_sha256": "a3aaa69c25669d331dc59e05393bdc3702bc48629b02a7d5f4cf95eb3b1f900b",
+      "size": [
+        576,
+        324
+      ]
+    },
+    {
+      "id": "ECO-152",
+      "class": "suelo_contaminado",
+      "path": "revision_ecoguard/revision/suelo_contaminado/ECO-152.png",
+      "sha256": "62c7c0f96a48947805ab46ea2f62f54db694f04e2e8ed2c4fbf302b46fba153a",
+      "pixel_sha256": "0af421c744644a590e90ec869a6c8b2568fc1fc7107162cdba1df1531db62c1f",
+      "size": [
+        275,
+        183
+      ]
+    },
+    {
+      "id": "ECO-154",
+      "class": "suelo_contaminado",
+      "path": "revision_ecoguard/revision/suelo_contaminado/ECO-154.png",
+      "sha256": "45859f88f21b416d31847ec5e5fdf6d6bd93692a8fb89d3e675ce6e96444e78d",
+      "pixel_sha256": "de3d17e93d9c44f1af3204ec2051d86d184cba8c71f85ba516c86181a0dbc3ce",
+      "size": [
+        576,
+        384
+      ]
+    },
+    {
+      "id": "ECO-164",
+      "class": "suelo_contaminado",
+      "path": "revision_ecoguard/revision/suelo_contaminado/ECO-164.png",
+      "sha256": "fe0eb3b4730fbf5ba259d27e2b349c2d17cf07271b881f011b79382e740f4e96",
+      "pixel_sha256": "559935f09c9d9f35faebd541c47fd3b8c2cbab183bb398619a61bd109c7f8c46",
+      "size": [
+        612,
+        408
+      ]
+    }
+  ],
+  "attempts": {
+    "inferencia-cpu": {
+      "command": [
+        "/home/troyano/proyectos/huanuco-ecoguard-ai/.venv-auditoria/bin/python",
+        "-c",
+        "import sys; sys.path.insert(0,'scripts'); from inferencia import Classifier; print(Classifier('entrega/original/train100/weights/best.pt').predict('revision_ecoguard/revision/aire_contaminado/ECO-005.png'))"
+      ],
+      "exit_code": 1
+    },
+    "exportacion-onnx": {
+      "command": [
+        "/home/troyano/proyectos/huanuco-ecoguard-ai/.venv-auditoria/bin/python",
+        "scripts/exportar_onnx.py",
+        "--imagenes",
+        "artifacts/test-original"
+      ],
+      "exit_code": 1
+    },
+    "gradio-original": {
+      "command": [
+        "/home/troyano/proyectos/huanuco-ecoguard-ai/.venv-auditoria/bin/python",
+        "scripts/app_gradio.py",
+        "--weights",
+        "entrega/original/train100/weights/best.pt",
+        "--port",
+        "7860"
+      ],
+      "exit_code": 1
+    },
+    "build-render": {
+      "command": [
+        "/home/troyano/proyectos/huanuco-ecoguard-ai/.venv-auditoria/bin/python",
+        "scripts/verificar_modelo_render.py"
+      ],
+      "exit_code": 1
+    }
+  },
+  "original_after_checks": {
+    "epocas": 100,
+    "accuracy_test": 0.9130434782608695,
+    "clases_matriz": [
+      "agua_contaminada",
+      "aire_contaminado",
+      "suelo_contaminado"
+    ],
+    "particiones": {
+      "train": 105,
+      "test": 23,
+      "val": 23
+    },
+    "distribucion_por_clase": {
+      "train": {
+        "aire_contaminado": 49,
+        "agua_contaminada": 26,
+        "suelo_contaminado": 30
+      },
+      "test": {
+        "aire_contaminado": 10,
+        "agua_contaminada": 6,
+        "suelo_contaminado": 7
+      },
+      "val": {
+        "aire_contaminado": 10,
+        "agua_contaminada": 6,
+        "suelo_contaminado": 7
+      }
+    },
+    "best_sha256": "57b2194e8cfb26de44eb93960193392965e4c46be3c75f8f22c81b5a37b7ed32"
+  }
+}

@@ -1,0 +1,5 @@
+# Instalar únicamente en el runtime de Colab. No instala entrenamiento en WSL.
+# Ultralytics 8.4.178 consta en la salida original del entrenamiento.
+ultralytics==8.4.178
+gradio>=5.49,<6
+Pillow>=11,<13

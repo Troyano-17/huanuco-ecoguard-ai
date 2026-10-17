@@ -1,0 +1,156 @@
+{
+  "original_archive_sha256": "ac10f88a010ef3fd0a7480cd984482496c77aa486e2548ff740c6da2fbf6f284",
+  "best_sha256": "57b2194e8cfb26de44eb93960193392965e4c46be3c75f8f22c81b5a37b7ed32",
+  "onnx_sha256": "b90eb5240038be75cea6b1477ef23665882abad69c126c7257a5578722812eef",
+  "names": {
+    "0": "agua_contaminada",
+    "1": "aire_contaminado",
+    "2": "suelo_contaminado"
+  },
+  "imgsz": 224,
+  "parity": {
+    "passed": true,
+    "images": 23,
+    "tolerance": 0.0001,
+    "details": [
+      {
+        "image_sha256": "f89a0b9baf72fe9a8715f46a09c8ad25425fb7c503eabac89f9fd3cdb8e069bd",
+        "max_abs_error": 9.822542779147625e-11,
+        "same_class": true,
+        "onnx_ms": 13.485013994795736
+      },
+      {
+        "image_sha256": "ae94da43d382de8cecb5b925dbd1975603c738538d92ef37c2c7a3ba24480a93",
+        "max_abs_error": 9.5367431640625e-07,
+        "same_class": true,
+        "onnx_ms": 15.461849005077966
+      },
+      {
+        "image_sha256": "d178ea0f93999794c29109942af9ae58967a146e1203219a4f870daa80dd496a",
+        "max_abs_error": 1.1920928955078125e-07,
+        "same_class": true,
+        "onnx_ms": 11.92408800125122
+      },
+      {
+        "image_sha256": "d03f3b0acb0b5e47a0db85e539a69e444edf667a53a725ccc0747a7a2d525083",
+        "max_abs_error": 1.4901161193847656e-08,
+        "same_class": true,
+        "onnx_ms": 8.64533500134712
+      },
+      {
+        "image_sha256": "6e611aa8d0c750b0977b59f7ddc9db74b2afdd50cfc2fda075b00ccba2b5043e",
+        "max_abs_error": 2.561137080192566e-09,
+        "same_class": true,
+        "onnx_ms": 13.51505699858535
+      },
+      {
+        "image_sha256": "896a5c036665b3793dfd099b356c25e8b5c5dbff98fcfbfa20e7bfffc4226cb2",
+        "max_abs_error": 2.980232238769531e-07,
+        "same_class": true,
+        "onnx_ms": 15.937176998704672
+      },
+      {
+        "image_sha256": "6c6a1f572c419232517b34d42b44e930ff40e345998d554efc79ce2218204cac",
+        "max_abs_error": 7.73070496506989e-12,
+        "same_class": true,
+        "onnx_ms": 39.25312700448558
+      },
+      {
+        "image_sha256": "bb365f252283a8e6d1ea5c2d59e4e2449a69e2029dde09b03ce1bcb166a4018d",
+        "max_abs_error": 1.1920928955078125e-07,
+        "same_class": true,
+        "onnx_ms": 16.12500799819827
+      },
+      {
+        "image_sha256": "568741bee7cee09685ab73d968d5bdaedeeef9821717d0986e4433a566124c31",
+        "max_abs_error": 1.546140993013978e-11,
+        "same_class": true,
+        "onnx_ms": 15.799921995494515
+      },
+      {
+        "image_sha256": "aedba9ea9d9168a284cf9d12ebe1bae3ee28e9d474b0ef5c03a352b5ee498b11",
+        "max_abs_error": 2.9802322387695312e-08,
+        "same_class": true,
+        "onnx_ms": 17.321547005849425
+      },
+      {
+        "image_sha256": "d44741d77c941af461bebf7701087c38542ccaec23dc5de3ff0ce0c6cd98c435",
+        "max_abs_error": 1.0477378964424133e-09,
+        "same_class": true,
+        "onnx_ms": 14.497381998808123
+      },
+      {
+        "image_sha256": "b1cf1a389077d6ec7ebb2cdb3382ca0726f65d5443e02bfef7c24f5dd85722c0",
+        "max_abs_error": 1.2505552149377763e-12,
+        "same_class": true,
+        "onnx_ms": 16.09703899885062
+      },
+      {
+        "image_sha256": "1121b301f024a81c3278043a2699b4c82117d2ceb56d790a7f251f9b8929311d",
+        "max_abs_error": 1.0913936421275139e-11,
+        "same_class": true,
+        "onnx_ms": 16.543170000659302
+      },
+      {
+        "image_sha256": "20343f8e317b76c3fb2f38e50d3b9b68ddcc76289e377e5b0c3d7fd76c35fc74",
+        "max_abs_error": 1.1641532182693481e-08,
+        "same_class": true,
+        "onnx_ms": 17.296476995397825
+      },
+      {
+        "image_sha256": "95ac8b6e9cc3475c1b4727edec1504b0a30e23c583eacc6ab6ef8cb191e86e38",
+        "max_abs_error": 8.242295734817162e-13,
+        "same_class": true,
+        "onnx_ms": 36.10166200087406
+      },
+      {
+        "image_sha256": "c0ec2f711d5464ff6700086e1339abce97d8f9b62f7289d5687fd7e4b77326e8",
+        "max_abs_error": 5.820766091346741e-11,
+        "same_class": true,
+        "onnx_ms": 17.343474995868746
+      },
+      {
+        "image_sha256": "800b40a5180ea1cc0e294e0bb2db78d34b4ee44e9805cefef2f73c8a9d698ef7",
+        "max_abs_error": 1.5916157281026244e-12,
+        "same_class": true,
+        "onnx_ms": 71.78666799882194
+      },
+      {
+        "image_sha256": "341ccc6e4a54eb77360b1f7dcda28d73f87ba3027fd4f9b788f8da1d26ea7fa8",
+        "max_abs_error": 1.825392246246338e-07,
+        "same_class": true,
+        "onnx_ms": 14.186265994794667
+      },
+      {
+        "image_sha256": "91e9fc3dd6ffad86505b8d8a412a7a2faa0bb8f79d2bc2d14ceeb47ca828ab9f",
+        "max_abs_error": 1.4551915228366852e-10,
+        "same_class": true,
+        "onnx_ms": 14.781366997340228
+      },
+      {
+        "image_sha256": "9fc85be387b4caac18e09391d048abc5ad84905fc444f1e6dcac018fd3e0c84b",
+        "max_abs_error": 2.831068712794149e-15,
+        "same_class": true,
+        "onnx_ms": 11.611529997026082
+      },
+      {
+        "image_sha256": "62c7c0f96a48947805ab46ea2f62f54db694f04e2e8ed2c4fbf302b46fba153a",
+        "max_abs_error": 3.9108272176235914e-11,
+        "same_class": true,
+        "onnx_ms": 7.2210139987873845
+      },
+      {
+        "image_sha256": "45859f88f21b416d31847ec5e5fdf6d6bd93692a8fb89d3e675ce6e96444e78d",
+        "max_abs_error": 5.7411853049416095e-12,
+        "same_class": true,
+        "onnx_ms": 12.018213004921563
+      },
+      {
+        "image_sha256": "fe0eb3b4730fbf5ba259d27e2b349c2d17cf07271b881f011b79382e740f4e96",
+        "max_abs_error": 1.4568966692773966e-19,
+        "same_class": true,
+        "onnx_ms": 14.58846899913624
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+WARNING: The directory '/home/troyano/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in links: /tmp/ecoguard-wheelhouse
+Processing /tmp/ecoguard-wheelhouse/requests-2.34.2-py3-none-any.whl
+Processing /tmp/ecoguard-wheelhouse/charset_normalizer-3.5.2-cp312-cp312-manylinux_2_17_x86_64.whl (from requests)
+Processing /tmp/ecoguard-wheelhouse/idna-3.20-py3-none-any.whl (from requests)
+Processing /tmp/ecoguard-wheelhouse/urllib3-2.8.0-py3-none-any.whl (from requests)
+Processing /tmp/ecoguard-wheelhouse/certifi-2026.7.22-py3-none-any.whl (from requests)
+Installing collected packages: urllib3, idna, charset_normalizer, certifi, requests
+Successfully installed certifi-2026.7.22 charset_normalizer-3.5.2 idna-3.20 requests-2.34.2 urllib3-2.8.0

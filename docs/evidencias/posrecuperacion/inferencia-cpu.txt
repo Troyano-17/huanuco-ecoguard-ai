@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/scripts/inferencia.py", line 88, in __init__
+    import torch
+ModuleNotFoundError: No module named 'torch'

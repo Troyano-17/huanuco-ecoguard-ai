@@ -1,0 +1,73 @@
+test_empty_dataset_cannot_build (test_data_gates.DataGates.test_empty_dataset_cannot_build) ... ok
+test_license_allowlist (test_data_gates.DataGates.test_license_allowlist) ... ok
+test_one_scene_per_class_is_insufficient (test_data_gates.DataGates.test_one_scene_per_class_is_insufficient) ... ok
+test_path_traversal_blocks (test_data_gates.DataGates.test_path_traversal_blocks) ... ok
+test_pending_review_blocks (test_data_gates.DataGates.test_pending_review_blocks) ... ok
+test_review_without_evidence_blocks (test_data_gates.DataGates.test_review_without_evidence_blocks) ... ok
+test_scene_groups_across_categories_stay_together (test_data_gates.DataGates.test_scene_groups_across_categories_stay_together) ... ok
+test_taco_uses_scene_schema_and_keeps_rights_pending (test_data_gates.DataGates.test_taco_uses_scene_schema_and_keeps_rights_pending) ... ok
+test_transitive_duplicate_groups_stay_together (test_data_gates.DataGates.test_transitive_duplicate_groups_stay_together) ... ok
+test_unknown_class_blocks (test_data_gates.DataGates.test_unknown_class_blocks) ... ok
+test_unknown_scene_blocks (test_data_gates.DataGates.test_unknown_scene_blocks) ... ok
+test_completed_file_is_not_uploaded_again (test_drive_resumable.DriveResumableTests.test_completed_file_is_not_uploaded_again) ... DRIVE API: archivo ya íntegro; SHA256: eebbf6457e46a7f63acdf9b97390f790ba443d60cfa44b607da7e5c40aa1cc1d
+ok
+test_no_progress_is_bounded (test_drive_resumable.DriveResumableTests.test_no_progress_is_bounded) ... DRIVE API: 0/4 bytes confirmados
+DRIVE API: 0/4 bytes confirmados
+DRIVE API: 0/4 bytes confirmados
+ok
+test_range_and_expiration_fail_closed (test_drive_resumable.DriveResumableTests.test_range_and_expiration_fail_closed) ... ok
+test_tls_lost_ack_resumes_at_server_offset_instead_of_resending (test_drive_resumable.DriveResumableTests.test_tls_lost_ack_resumes_at_server_offset_instead_of_resending) ... DRIVE API: 8/10 bytes confirmados
+DRIVE API: 10/10 bytes confirmados
+DRIVE API: subida y SHA256 remoto verificados: 84d89877f0d4041efb6bf91a16f0248f2fd573e6af05c19f96bedb9f882f7882 file ID: reserved-file
+ok
+test_all_checkpoints_corrupt_or_wrong_dataset_fail_closed (test_persistence.PersistenceTests.test_all_checkpoints_corrupt_or_wrong_dataset_fail_closed) ... CHECKPOINT PERSISTENTE: 042-a3bd4b6ce02740b4b76b03d1b59c5fa6 época: 42
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 042-a3bd4b6ce02740b4b76b03d1b59c5fa6
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 042-a3bd4b6ce02740b4b76b03d1b59c5fa6
+ok
+test_ambiguous_start_queries_status_without_second_start (test_persistence.PersistenceTests.test_ambiguous_start_queries_status_without_second_start) ... DATASET LOCAL SHA256: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bytes: 1 fragmentos: 1
+REQUEST_TIMEOUT=180; WSL solo bytes/metadatos; no se crea una sesión.
+START ambiguo: consultando estado, sin repetir el lanzamiento.
+ESTADO: {'vivo': True}
+Trabajador autónomo. Puedes cerrar WSL. Consulta: python scripts/entrenar_165_wsl.py status
+ok
+test_backoff_bounded_and_permanent_failure_not_retried (test_persistence.PersistenceTests.test_backoff_bounded_and_permanent_failure_not_retried) ... RED: reintento 1/3; backoff 1.0s
+RED: reintento 2/3; backoff 2.2s
+RED: reintento 3/3; backoff 4.0s
+ok
+test_controller_start_twice_launches_one_worker (test_persistence.PersistenceTests.test_controller_start_twice_launches_one_worker) ... 
+ECOGUARD_ESTADO={"fase": "iniciando", "dataset_sha256": "74a06ea6113b7f98d70ba2286ddaa21a9a17e25ed2bb8736a823dbc46177eb44", "vivo": true, "offset": 0, "run_dir": "/tmp/tmpbhyxptqi/drive/runs/train100-74a06ea6113b7f98d70ba2286ddaa21a9a17e25ed2bb8736a823dbc46177eb44", "owner": {"boot_id": "c9c8912d-70ca-46e9-87bf-639ef85bab33", "claimed_at": 1792172223.2982326}, "entrega": false}
+
+ECOGUARD_ESTADO={"fase": "iniciando", "dataset_sha256": "74a06ea6113b7f98d70ba2286ddaa21a9a17e25ed2bb8736a823dbc46177eb44", "vivo": true, "offset": 0, "run_dir": "/tmp/tmpbhyxptqi/drive/runs/train100-74a06ea6113b7f98d70ba2286ddaa21a9a17e25ed2bb8736a823dbc46177eb44", "owner": {"boot_id": "c9c8912d-70ca-46e9-87bf-639ef85bab33", "claimed_at": 1792172223.2982326}, "entrega": false}
+ok
+test_corrupt_part_never_publishes_archive (test_persistence.PersistenceTests.test_corrupt_part_never_publishes_archive) ... ok
+test_multi_part_assembly_and_changed_runtime (test_persistence.PersistenceTests.test_multi_part_assembly_and_changed_runtime) ... RESPALDO DRIVE VERIFICADO SHA256: ca2f2069ea0c6e4658222e06f8dd639659cbb5e67cbbba6734bc334a3799bc68
+ok
+test_new_runtime_cannot_steal_owner_by_age (test_persistence.PersistenceTests.test_new_runtime_cannot_steal_owner_by_age) ... ok
+test_only_smoke_valid_does_not_reset_prior_training (test_persistence.PersistenceTests.test_only_smoke_valid_does_not_reset_prior_training) ... CHECKPOINT PERSISTENTE: 000-45cc92bd8e3c4b6bbda7f499e559d039 época: 0
+CHECKPOINT PERSISTENTE: 010-32f363772d6f48f092d0c12d971733a3 época: 10
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 010-32f363772d6f48f092d0c12d971733a3
+ok
+test_remote_protocol_executes_library_in_fresh_process_and_reports_errors (test_persistence.PersistenceTests.test_remote_protocol_executes_library_in_fresh_process_and_reports_errors) ... ok
+test_tls_response_lost_then_reconnect_skips_committed_part (test_persistence.PersistenceTests.test_tls_response_lost_then_reconnect_skips_committed_part) ... RESPALDO DRIVE VERIFICADO SHA256: 6bda98dacc44f21a949d94392e66cfe79656b5dcb377a019d0553d970ec8dbe8
+RESPALDO DRIVE VERIFICADO SHA256: 6bda98dacc44f21a949d94392e66cfe79656b5dcb377a019d0553d970ec8dbe8
+ok
+test_vm_loss_restores_last_valid_generation_without_reset (test_persistence.PersistenceTests.test_vm_loss_restores_last_valid_generation_without_reset) ... CHECKPOINT PERSISTENTE: 037-25df490144284514bda6cf7a5b462408 época: 37
+CHECKPOINT PERSISTENTE: 038-c44f176bb9c94db7852b2712edfe9e61 época: 38
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 038-c44f176bb9c94db7852b2712edfe9e61
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 039-interrupted
+RECUPERACIÓN VERIFICADA: test época: 37
+ok
+test_worker_lock_survives_controller_disconnect_and_prevents_duplicates (test_persistence.PersistenceTests.test_worker_lock_survives_controller_disconnect_and_prevents_duplicates) ... ok
+test_downloaded_delivery_requires_all_100_epochs (test_remote_training.RemoteTrainingTests.test_downloaded_delivery_requires_all_100_epochs) ... Descarga verificada: prueba de 2 épocas, entrenamiento de 100 y pesos.
+ok
+test_evidence_rejects_missing_or_duplicate_epochs (test_remote_training.RemoteTrainingTests.test_evidence_rejects_missing_or_duplicate_epochs) ... ok
+test_grouped_split_covers_all_classes_and_is_reproducible (test_remote_training.RemoteTrainingTests.test_grouped_split_covers_all_classes_and_is_reproducible) ... ok
+test_impossible_independent_groups_fail (test_remote_training.RemoteTrainingTests.test_impossible_independent_groups_fail) ... ok
+test_local_environment_is_rejected_before_torch_import (test_remote_training.RemoteTrainingTests.test_local_environment_is_rejected_before_torch_import) ... ok
+test_local_restoration_is_rejected (test_remote_training.RemoteTrainingTests.test_local_restoration_is_rejected) ... ok
+test_manifest_paths_are_adapted_without_changing_original (test_remote_training.RemoteTrainingTests.test_manifest_paths_are_adapted_without_changing_original) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 1.953s
+
+OK

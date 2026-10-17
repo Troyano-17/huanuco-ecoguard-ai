@@ -1,0 +1,107 @@
+setUpClass (test_app_real.RealApplicationTests) ... ERROR
+test_archive_preserves_existing_files (test_cierre.CierreTests.test_archive_preserves_existing_files) ... ok
+test_archive_rejects_traversal (test_cierre.CierreTests.test_archive_rejects_traversal) ... ok
+test_bad_mapping_rejected (test_cierre.CierreTests.test_bad_mapping_rejected) ... ok
+test_foreign_checkpoint_rejected_before_torch_import (test_cierre.CierreTests.test_foreign_checkpoint_rejected_before_torch_import) ... ok
+test_invalid_scores_rejected (test_cierre.CierreTests.test_invalid_scores_rejected) ... ok
+test_mapping_preserves_actual_model_order (test_cierre.CierreTests.test_mapping_preserves_actual_model_order) ... ok
+test_missing_original_rejected_before_heavy_import (test_cierre.CierreTests.test_missing_original_rejected_before_heavy_import) ... ok
+test_original_verifier_checks_epochs_matrix_and_reserved_test (test_cierre.CierreTests.test_original_verifier_checks_epochs_matrix_and_reserved_test) ... ok
+test_recorded_metrics_match_original_stdout (test_cierre.CierreTests.test_recorded_metrics_match_original_stdout) ... ok
+test_score_indices_follow_model_names (test_cierre.CierreTests.test_score_indices_follow_model_names) ... ok
+test_sha_manifest_detects_tampering_missing_and_extra (test_cierre.CierreTests.test_sha_manifest_detects_tampering_missing_and_extra) ... ok
+test_empty_dataset_cannot_build (test_data_gates.DataGates.test_empty_dataset_cannot_build) ... ok
+test_license_allowlist (test_data_gates.DataGates.test_license_allowlist) ... ok
+test_one_scene_per_class_is_insufficient (test_data_gates.DataGates.test_one_scene_per_class_is_insufficient) ... ok
+test_path_traversal_blocks (test_data_gates.DataGates.test_path_traversal_blocks) ... ok
+test_pending_review_blocks (test_data_gates.DataGates.test_pending_review_blocks) ... ok
+test_review_without_evidence_blocks (test_data_gates.DataGates.test_review_without_evidence_blocks) ... ok
+test_scene_groups_across_categories_stay_together (test_data_gates.DataGates.test_scene_groups_across_categories_stay_together) ... ok
+test_taco_uses_scene_schema_and_keeps_rights_pending (test_data_gates.DataGates.test_taco_uses_scene_schema_and_keeps_rights_pending) ... ok
+test_transitive_duplicate_groups_stay_together (test_data_gates.DataGates.test_transitive_duplicate_groups_stay_together) ... ok
+test_unknown_class_blocks (test_data_gates.DataGates.test_unknown_class_blocks) ... ok
+test_unknown_scene_blocks (test_data_gates.DataGates.test_unknown_scene_blocks) ... ok
+test_completed_file_is_not_uploaded_again (test_drive_resumable.DriveResumableTests.test_completed_file_is_not_uploaded_again) ... DRIVE API: archivo ya íntegro; SHA256: eebbf6457e46a7f63acdf9b97390f790ba443d60cfa44b607da7e5c40aa1cc1d
+ok
+test_no_progress_is_bounded (test_drive_resumable.DriveResumableTests.test_no_progress_is_bounded) ... DRIVE API: 0/4 bytes confirmados
+DRIVE API: 0/4 bytes confirmados
+DRIVE API: 0/4 bytes confirmados
+ok
+test_range_and_expiration_fail_closed (test_drive_resumable.DriveResumableTests.test_range_and_expiration_fail_closed) ... ok
+test_tls_lost_ack_resumes_at_server_offset_instead_of_resending (test_drive_resumable.DriveResumableTests.test_tls_lost_ack_resumes_at_server_offset_instead_of_resending) ... DRIVE API: 8/10 bytes confirmados
+DRIVE API: 10/10 bytes confirmados
+DRIVE API: subida y SHA256 remoto verificados: 84d89877f0d4041efb6bf91a16f0248f2fd573e6af05c19f96bedb9f882f7882 file ID: reserved-file
+ok
+test_document_types_identifiers_and_privacy (test_mongo_schema_local.LocalMongoSchemaTests.test_document_types_identifiers_and_privacy) ... ok
+test_invalid_documents_rejected_before_connection (test_mongo_schema_local.LocalMongoSchemaTests.test_invalid_documents_rejected_before_connection) ... ok
+test_real_bson_roundtrip_without_database (test_mongo_schema_local.LocalMongoSchemaTests.test_real_bson_roundtrip_without_database) ... ok
+test_all_checkpoints_corrupt_or_wrong_dataset_fail_closed (test_persistence.PersistenceTests.test_all_checkpoints_corrupt_or_wrong_dataset_fail_closed) ... CHECKPOINT PERSISTENTE: 042-37129799aba046e4a8192372d03a70a3 época: 42
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 042-37129799aba046e4a8192372d03a70a3
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 042-37129799aba046e4a8192372d03a70a3
+ok
+test_ambiguous_start_queries_status_without_second_start (test_persistence.PersistenceTests.test_ambiguous_start_queries_status_without_second_start) ... DATASET LOCAL SHA256: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bytes: 1 fragmentos: 1
+REQUEST_TIMEOUT=180; WSL solo bytes/metadatos; no se crea una sesión.
+START ambiguo: consultando estado, sin repetir el lanzamiento.
+ESTADO: {'vivo': True}
+Trabajador autónomo. Puedes cerrar WSL. Consulta: python scripts/entrenar_165_wsl.py status
+ok
+test_backoff_bounded_and_permanent_failure_not_retried (test_persistence.PersistenceTests.test_backoff_bounded_and_permanent_failure_not_retried) ... RED: reintento 1/3; backoff 1.4s
+RED: reintento 2/3; backoff 2.5s
+RED: reintento 3/3; backoff 4.9s
+ok
+test_controller_start_twice_launches_one_worker (test_persistence.PersistenceTests.test_controller_start_twice_launches_one_worker) ... 
+ECOGUARD_ESTADO={"fase": "iniciando", "dataset_sha256": "74a06ea6113b7f98d70ba2286ddaa21a9a17e25ed2bb8736a823dbc46177eb44", "vivo": true, "offset": 0, "run_dir": "/tmp/tmp7q04cbwk/drive/runs/train100-74a06ea6113b7f98d70ba2286ddaa21a9a17e25ed2bb8736a823dbc46177eb44", "owner": {"boot_id": "c9c8912d-70ca-46e9-87bf-639ef85bab33", "claimed_at": 1792185669.6265943}, "entrega": false}
+
+ECOGUARD_ESTADO={"fase": "iniciando", "dataset_sha256": "74a06ea6113b7f98d70ba2286ddaa21a9a17e25ed2bb8736a823dbc46177eb44", "vivo": true, "offset": 0, "run_dir": "/tmp/tmp7q04cbwk/drive/runs/train100-74a06ea6113b7f98d70ba2286ddaa21a9a17e25ed2bb8736a823dbc46177eb44", "owner": {"boot_id": "c9c8912d-70ca-46e9-87bf-639ef85bab33", "claimed_at": 1792185669.6265943}, "entrega": false}
+ok
+test_corrupt_part_never_publishes_archive (test_persistence.PersistenceTests.test_corrupt_part_never_publishes_archive) ... ok
+test_multi_part_assembly_and_changed_runtime (test_persistence.PersistenceTests.test_multi_part_assembly_and_changed_runtime) ... RESPALDO DRIVE VERIFICADO SHA256: ca2f2069ea0c6e4658222e06f8dd639659cbb5e67cbbba6734bc334a3799bc68
+ok
+test_new_runtime_cannot_steal_owner_by_age (test_persistence.PersistenceTests.test_new_runtime_cannot_steal_owner_by_age) ... ok
+test_only_smoke_valid_does_not_reset_prior_training (test_persistence.PersistenceTests.test_only_smoke_valid_does_not_reset_prior_training) ... CHECKPOINT PERSISTENTE: 000-f20021bf92b24ea2815ff29c135d9a75 época: 0
+CHECKPOINT PERSISTENTE: 010-458c710a47a84f38ab83c23613d9f5c4 época: 10
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 010-458c710a47a84f38ab83c23613d9f5c4
+ok
+test_remote_protocol_executes_library_in_fresh_process_and_reports_errors (test_persistence.PersistenceTests.test_remote_protocol_executes_library_in_fresh_process_and_reports_errors) ... ok
+test_tls_response_lost_then_reconnect_skips_committed_part (test_persistence.PersistenceTests.test_tls_response_lost_then_reconnect_skips_committed_part) ... RESPALDO DRIVE VERIFICADO SHA256: 6bda98dacc44f21a949d94392e66cfe79656b5dcb377a019d0553d970ec8dbe8
+RESPALDO DRIVE VERIFICADO SHA256: 6bda98dacc44f21a949d94392e66cfe79656b5dcb377a019d0553d970ec8dbe8
+ok
+test_vm_loss_restores_last_valid_generation_without_reset (test_persistence.PersistenceTests.test_vm_loss_restores_last_valid_generation_without_reset) ... CHECKPOINT PERSISTENTE: 037-9c325af1d49e4547bfa4e34a7bd770df época: 37
+CHECKPOINT PERSISTENTE: 038-19ef8308ae244ae19c2510365c2d3aad época: 38
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 038-19ef8308ae244ae19c2510365c2d3aad
+CHECKPOINT IGNORADO (incompleto/corrupto/dataset distinto): 039-interrupted
+RECUPERACIÓN VERIFICADA: test época: 37
+ok
+test_worker_lock_survives_controller_disconnect_and_prevents_duplicates (test_persistence.PersistenceTests.test_worker_lock_survives_controller_disconnect_and_prevents_duplicates) ... ok
+test_history_and_statistics_are_real_queries (test_produccion.ProductionContracts.test_history_and_statistics_are_real_queries) ... ok
+test_local_recovery_rejects_wrong_zip_without_colab (test_produccion.ProductionContracts.test_local_recovery_rejects_wrong_zip_without_colab) ... ok
+test_mongo_document_privacy_and_acknowledgement (test_produccion.ProductionContracts.test_mongo_document_privacy_and_acknowledgement) ... Inserción MongoDB falló (StorageError)
+Inserción MongoDB falló (Exception)
+ok
+test_onnx_refuses_unvalidated_conversion_before_runtime_import (test_produccion.ProductionContracts.test_onnx_refuses_unvalidated_conversion_before_runtime_import) ... ok
+test_unconfigured_mongodb_does_not_claim_success (test_produccion.ProductionContracts.test_unconfigured_mongodb_does_not_claim_success) ... ok
+test_prediction_insert_query (test_produccion.RealAtlasAcceptance.test_prediction_insert_query) ... skipped 'Falta habilitar integración real con modelo original y MongoDB Atlas'
+test_downloaded_delivery_requires_all_100_epochs (test_remote_training.RemoteTrainingTests.test_downloaded_delivery_requires_all_100_epochs) ... Descarga verificada: prueba de 2 épocas, entrenamiento de 100 y pesos.
+ok
+test_evidence_rejects_missing_or_duplicate_epochs (test_remote_training.RemoteTrainingTests.test_evidence_rejects_missing_or_duplicate_epochs) ... ok
+test_grouped_split_covers_all_classes_and_is_reproducible (test_remote_training.RemoteTrainingTests.test_grouped_split_covers_all_classes_and_is_reproducible) ... ok
+test_impossible_independent_groups_fail (test_remote_training.RemoteTrainingTests.test_impossible_independent_groups_fail) ... ok
+test_local_environment_is_rejected_before_torch_import (test_remote_training.RemoteTrainingTests.test_local_environment_is_rejected_before_torch_import) ... ok
+test_local_restoration_is_rejected (test_remote_training.RemoteTrainingTests.test_local_restoration_is_rejected) ... ok
+test_manifest_paths_are_adapted_without_changing_original (test_remote_training.RemoteTrainingTests.test_manifest_paths_are_adapted_without_changing_original) ... ok
+
+======================================================================
+ERROR: setUpClass (test_app_real.RealApplicationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/tests/test_app_real.py", line 19, in setUpClass
+    cls.classifier=Classifier(cls.weights)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/scripts/inferencia.py", line 88, in __init__
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+----------------------------------------------------------------------
+Ran 54 tests in 2.043s
+
+FAILED (errors=1, skipped=1)

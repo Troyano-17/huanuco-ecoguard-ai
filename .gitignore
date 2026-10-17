@@ -1,0 +1,42 @@
+.runtime/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.venv/
+.venv-*/
+venv/
+.pytest_cache/
+.agents/
+.codex/
+.aws/
+*.pem
+*.key
+*credentials*.json
+*token*.json
+*secret*.json
+recuperados/
+entrega/original/
+entrega/entrega-original.zip
+*.pt
+*.zip
+*.zip.sha256
+imagenes/
+revision/
+revision_ecoguard/
+galeria.html
+# models/best.onnx y models/best.json se publican solo tras verificación real.
+artifacts/
+data/
+dataset/
+
+# Entregas académicas y respaldos locales
+/dist/
+/entrega/
+
+# Metadatos descargados desde Windows
+*:Zone.Identifier
+
+# Diagnósticos locales
+diagnostico-*.txt

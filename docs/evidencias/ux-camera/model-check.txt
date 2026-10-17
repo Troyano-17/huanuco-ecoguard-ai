@@ -1,0 +1,1 @@
+ONNX: integridad, procedencia, clases y reporte de equivalencia verificados.

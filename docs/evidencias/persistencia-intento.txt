@@ -1,0 +1,6 @@
+DATASET LOCAL SHA256: f17a403815f2d184c668ebda60c9e963916bef296522d98e70b43721d3ceeca5 bytes: 95582861 fragmentos: 92
+REQUEST_TIMEOUT=180; WSL solo bytes/metadatos; no se crea una sesión.
+RED: reintento 1/3; backoff 1.1s
+RED: reintento 2/3; backoff 2.0s
+RED: reintento 3/3; backoff 4.6s
+FASE BLOQUEADA: Error transitorio DNS/TLS/HTTP; operación remota por comprobar

@@ -1,0 +1,334 @@
+{
+  "scope": "Exploratorio, posterior al entrenamiento sobre el mismo test original; no es una prueba independiente ni evidencia de mejora del modelo.",
+  "threshold": 0.6,
+  "historical": {
+    "epochs": 100,
+    "correct": 21,
+    "total": 23,
+    "accuracy_percent": 91.3043
+  },
+  "observed": {
+    "total": 23,
+    "accepted": 23,
+    "inconclusive": 0,
+    "correct_accepted": 21,
+    "incorrect_accepted": 2,
+    "incorrect_rejected": 0,
+    "coverage_percent": 100.0,
+    "accuracy_accepted_percent": 91.30434782608695
+  },
+  "clean_unrelated_sample": "No se encontró una muestra local identificada y validada de escenas limpias o ajenas a las tres categorías. No se estima su tasa de rechazo.",
+  "images": [
+    {
+      "image": "artifacts/test-original/agua_contaminada/ECO-082.png",
+      "expected": "agua_contaminada",
+      "predicted": "agua_contaminada",
+      "scores": {
+        "agua_contaminada": 0.9997827410697937,
+        "aire_contaminado": 0.00016589512233622372,
+        "suelo_contaminado": 5.1356630137888715e-05
+      },
+      "maximum": 0.9997827410697937,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/agua_contaminada/ECO-088.png",
+      "expected": "agua_contaminada",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 0.10727102309465408,
+        "aire_contaminado": 0.0006447763298638165,
+        "suelo_contaminado": 0.8920842409133911
+      },
+      "maximum": 0.8920842409133911,
+      "accepted": true,
+      "correct": false
+    },
+    {
+      "image": "artifacts/test-original/agua_contaminada/ECO-092.png",
+      "expected": "agua_contaminada",
+      "predicted": "agua_contaminada",
+      "scores": {
+        "agua_contaminada": 0.9743672013282776,
+        "aire_contaminado": 0.009869410656392574,
+        "suelo_contaminado": 0.015763333067297935
+      },
+      "maximum": 0.9743672013282776,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/agua_contaminada/ECO-105.png",
+      "expected": "agua_contaminada",
+      "predicted": "agua_contaminada",
+      "scores": {
+        "agua_contaminada": 0.9654924869537354,
+        "aire_contaminado": 0.027752455323934555,
+        "suelo_contaminado": 0.006755088455975056
+      },
+      "maximum": 0.9654924869537354,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/agua_contaminada/ECO-108.png",
+      "expected": "agua_contaminada",
+      "predicted": "agua_contaminada",
+      "scores": {
+        "agua_contaminada": 0.9991905093193054,
+        "aire_contaminado": 5.545681415242143e-05,
+        "suelo_contaminado": 0.0007540364749729633
+      },
+      "maximum": 0.9991905093193054,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/agua_contaminada/ECO-112.png",
+      "expected": "agua_contaminada",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 0.3130844235420227,
+        "aire_contaminado": 0.0017094012582674623,
+        "suelo_contaminado": 0.6852061152458191
+      },
+      "maximum": 0.6852061152458191,
+      "accepted": true,
+      "correct": false
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-005.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 8.896660688151314e-07,
+        "aire_contaminado": 0.9999953508377075,
+        "suelo_contaminado": 3.847338120976929e-06
+      },
+      "maximum": 0.9999953508377075,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-019.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 0.04717359319329262,
+        "aire_contaminado": 0.9528237581253052,
+        "suelo_contaminado": 2.6257093850290403e-06
+      },
+      "maximum": 0.9528237581253052,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-027.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 5.153779625288735e-07,
+        "aire_contaminado": 0.9999967813491821,
+        "suelo_contaminado": 2.685871095309267e-06
+      },
+      "maximum": 0.9999967813491821,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-028.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 0.10393409430980682,
+        "aire_contaminado": 0.8959974050521851,
+        "suelo_contaminado": 6.851124635431916e-05
+      },
+      "maximum": 0.8959974050521851,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-031.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 0.00021151489636395127,
+        "aire_contaminado": 0.9995126724243164,
+        "suelo_contaminado": 0.00027586743817664683
+      },
+      "maximum": 0.9995126724243164,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-032.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 7.2040038503473625e-06,
+        "aire_contaminado": 0.9999915361404419,
+        "suelo_contaminado": 1.3607445907837246e-06
+      },
+      "maximum": 0.9999915361404419,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-035.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 1.1507300996527192e-06,
+        "aire_contaminado": 0.9999988079071045,
+        "suelo_contaminado": 4.4271128984973984e-08
+      },
+      "maximum": 0.9999988079071045,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-040.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 0.005913240369409323,
+        "aire_contaminado": 0.9931570887565613,
+        "suelo_contaminado": 0.0009295977069996297
+      },
+      "maximum": 0.9931570887565613,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-056.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 3.152601741945524e-14,
+        "aire_contaminado": 0.9999998807907104,
+        "suelo_contaminado": 1.2311807040532585e-07
+      },
+      "maximum": 0.9999998807907104,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/aire_contaminado/ECO-070.png",
+      "expected": "aire_contaminado",
+      "predicted": "aire_contaminado",
+      "scores": {
+        "agua_contaminada": 0.0020913374610245228,
+        "aire_contaminado": 0.9978469610214233,
+        "suelo_contaminado": 6.17471378063783e-05
+      },
+      "maximum": 0.9978469610214233,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/suelo_contaminado/ECO-122.png",
+      "expected": "suelo_contaminado",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 6.6941572285372786e-09,
+        "aire_contaminado": 1.6691504924892797e-06,
+        "suelo_contaminado": 0.9999983310699463
+      },
+      "maximum": 0.9999983310699463,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/suelo_contaminado/ECO-127.png",
+      "expected": "suelo_contaminado",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 0.026646379381418228,
+        "aire_contaminado": 2.532148027967196e-05,
+        "suelo_contaminado": 0.9733283519744873
+      },
+      "maximum": 0.9733283519744873,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/suelo_contaminado/ECO-142.png",
+      "expected": "suelo_contaminado",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 4.7140907554421574e-05,
+        "aire_contaminado": 0.0001430413976777345,
+        "suelo_contaminado": 0.9998098015785217
+      },
+      "maximum": 0.9998098015785217,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/suelo_contaminado/ECO-151.png",
+      "expected": "suelo_contaminado",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 8.513264420674516e-13,
+        "aire_contaminado": 4.944183951138825e-10,
+        "suelo_contaminado": 1.0
+      },
+      "maximum": 1.0,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/suelo_contaminado/ECO-152.png",
+      "expected": "suelo_contaminado",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 6.8777262640651315e-06,
+        "aire_contaminado": 1.5151742445596028e-05,
+        "suelo_contaminado": 0.9999779462814331
+      },
+      "maximum": 0.9999779462814331,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/suelo_contaminado/ECO-154.png",
+      "expected": "suelo_contaminado",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 4.3547018435674545e-07,
+        "aire_contaminado": 8.596561542617565e-07,
+        "suelo_contaminado": 0.9999986886978149
+      },
+      "maximum": 0.9999986886978149,
+      "accepted": true,
+      "correct": true
+    },
+    {
+      "image": "artifacts/test-original/suelo_contaminado/ECO-164.png",
+      "expected": "suelo_contaminado",
+      "predicted": "suelo_contaminado",
+      "scores": {
+        "agua_contaminada": 3.76318904451079e-17,
+        "aire_contaminado": 2.5387398550047978e-14,
+        "suelo_contaminado": 1.0
+      },
+      "maximum": 1.0,
+      "accepted": true,
+      "correct": true
+    }
+  ],
+  "sha256_before": {
+    "entrega/original/train100/weights/best.pt": "57b2194e8cfb26de44eb93960193392965e4c46be3c75f8f22c81b5a37b7ed32",
+    "entrega/original/train100/weights/last.pt": "005ecb8bd05c6f2bfba95d3deccdc2f9c112840fea398aae07807d15c8e8d72f",
+    "models/best.onnx": "b90eb5240038be75cea6b1477ef23665882abad69c126c7257a5578722812eef",
+    "models/best.json": "b24374fea80eb90015ae53ceca2673188104fc46b1acd506911c1f7273d5b178"
+  },
+  "sha256_after": {
+    "entrega/original/train100/weights/best.pt": "57b2194e8cfb26de44eb93960193392965e4c46be3c75f8f22c81b5a37b7ed32",
+    "entrega/original/train100/weights/last.pt": "005ecb8bd05c6f2bfba95d3deccdc2f9c112840fea398aae07807d15c8e8d72f",
+    "models/best.onnx": "b90eb5240038be75cea6b1477ef23665882abad69c126c7257a5578722812eef",
+    "models/best.json": "b24374fea80eb90015ae53ceca2673188104fc46b1acd506911c1f7273d5b178"
+  }
+}

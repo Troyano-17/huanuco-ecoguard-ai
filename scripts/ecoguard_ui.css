@@ -1,0 +1,109 @@
+/* Paleta única para mantener contraste en ambos temas del navegador. */
+.gradio-container {
+  --body-background-fill: #0b1412;
+  --body-text-color: #e5eeea;
+  --body-text-color-subdued: #a4b9af;
+  color-scheme: dark;
+  background: #0b1412 !important;
+  color: #e5eeea !important;
+}
+body {background: #0b1412;}
+#eco-shell {max-width: 1120px; margin: 0 auto; padding: 24px 12px 8px; gap: 22px;}
+#eco-shell .prose {color: #c4d6cd; line-height: 1.65;}
+#eco-shell .prose h3 {color: #f0f6f2; font-size: 1.2rem; letter-spacing: -.02em; margin: 0 0 8px;}
+#eco-shell .prose h4 {color: #e5eeea; font-size: 1rem; margin: 0 0 6px;}
+#eco-intro {padding: 28px 32px; border: 1px solid #2b4638; border-radius: 22px; background: radial-gradient(ellipse at top right, #204c34 0, transparent 65%), #12241c;}
+#eco-intro h1 {color: #f2f8f4; margin: 12px 0; font-size: clamp(1.55rem, 4vw, 2.65rem); line-height: 1.15; letter-spacing: -.04em; font-weight: 750;}
+.eco-kicker {color: #8ae8b5; font-size: .72rem; letter-spacing: .14em; font-weight: 700;}
+#eco-intro .eco-subtitle {font-size: clamp(1.05rem, 2vw, 1.25rem); color: #e0eee6; margin: 0 0 10px;}
+#eco-intro .eco-intro-copy {color: #afc7b9; line-height: 1.6; max-width: 660px; margin: 0;}
+#eco-notice {border-left: 3px solid #72dfaa; border-radius: 0 10px 10px 0; padding: 12px 18px; color: #bdd1c5; background: #14231c; line-height: 1.6; font-size: .9rem;}
+#eco-notice strong {color: #9de8be;}
+.eco-logout {display:flex;justify-content:flex-end;margin:-10px 0 0;}
+.eco-logout button {width:auto!important;min-height:42px!important;padding:8px 18px!important;
+  border:1px solid #486555!important;background:#162720!important;color:#e5eeea!important;border-radius:10px;cursor:pointer;}
+.eco-logout button:hover {background:#203c2e!important;border-color:#629075!important;}
+#eco-tabs [role="tablist"] {gap: 8px; padding: 0 0 12px; border-bottom: 1px solid #2b4036; margin-bottom: 22px;}
+#eco-tabs [role="tablist"] button {border-radius: 10px; padding: 10px 24px; color: #a4b9af; border: 1px solid transparent; font-weight: 650;}
+#eco-tabs [role="tablist"] button.selected {background: #203c2e; color: #9de8be; border-color: #395f49;}
+#eco-tabs .tabitem {padding: 0; border: 0;}
+.eco-workspace {gap: 24px !important; align-items: flex-start;}
+.eco-input-panel {padding: 22px !important; border: 1px solid #2b4036 !important; border-radius: 18px; background: #111f1a; gap: 14px !important;}
+#eco-upload {border-style: dashed; border-color: #4b6c59; border-radius: 12px; background: #14271d; min-height: 132px;}
+#eco-preview {border-radius: 12px;}
+/* La vista previa solo ocupa espacio cuando hay una fotografía. */
+#eco-preview:not(:has(img)) {display: none;}
+.eco-result {padding: 24px !important; border: 1px solid #355441 !important; border-radius: 18px; background: #12231b; color: #d4e4db; gap: 8px !important;}
+.eco-result p {line-height: 1.65; margin: 6px 0;}
+.eco-result h3 {color: #a0edc1;}
+.eco-result h4 {color: #e5eeea; font-size: 1rem; margin: 0 0 6px; line-height: 1.5;}
+.eco-category p, .eco-result .eco-main-result {font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 750; line-height: 1.2; color: #a0edc1; margin: 0 0 16px; letter-spacing: -.03em;}
+.eco-eyebrow, .eco-result-label p {font-size: .78rem; color: #a8c3b4; font-weight: 650; letter-spacing: .04em;}
+.eco-score {margin: 14px 0;}
+.eco-score-label {display: flex; justify-content: space-between; gap: 12px; align-items: baseline; font-size: .9rem; margin-bottom: 7px; color: #d4e4db;}
+.eco-score-label strong {font-variant-numeric: tabular-nums; color: #b8f0cd; white-space: nowrap; font-size: .85rem;}
+.eco-track {height: 8px; background: #2a4032; border-radius: 20px; overflow: hidden;}
+.eco-fill {height: 100%; background: linear-gradient(90deg, #3fa76b, #92e7b2); border-radius: inherit;}
+.eco-caption {font-size: .8rem; color: #a4b9af; line-height: 1.6;}
+.eco-explanation {padding-top: 18px !important; margin-top: 8px; border-top: 1px solid #2b4636 !important; gap: 2px !important;}
+.eco-recommendation {background: #1a3325; padding: 16px !important; border-radius: 12px; margin-top: 12px; gap: 2px !important;}
+.eco-help .prose p {font-size: .8rem; color: #a4b9af !important; line-height: 1.6;}
+.eco-empty {padding: 26px 8px; text-align: center; max-width: 340px; margin: auto;}
+.eco-empty-symbol {display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; border: 1px solid #3f614a; background: #1e3929; color: #9de8be; font-size: 2rem; margin: 0 auto 16px;}
+.eco-empty h3 {font-size: 1.2rem; margin: 0 0 8px; color: #d4e4db;}
+.eco-empty p {color: #a4b9af; font-size: .95rem;}
+.eco-empty .eco-caption {display: block; margin-top: 18px; color: #86b99b;}
+/* Los títulos explicativos aparecen junto a su contenido, sin paneles vacíos. */
+#eco-photo-result:not(:has(.eco-category p)) > :not(#eco-photo-empty) {display: none;}
+#eco-photo-result:has(.eco-category p) > #eco-photo-empty {display: none;}
+#eco-photo-result:has(.eco-inconclusive) > :not(#eco-photo-scores) {display: none;}
+#eco-photo-result:has(.eco-inconclusive) > #eco-photo-scores {display: block;}
+.eco-actions {gap: 10px !important;}
+#eco-shell button {transition: background-color .15s ease, border-color .15s ease;}
+#eco-shell button.lg {min-height: 46px; border-radius: 10px; font-size: .92rem; font-weight: 650;}
+#eco-shell button:focus-visible, #eco-shell a:focus-visible {outline: 2px solid #a0edc1; outline-offset: 3px;}
+.eco-status {padding: 10px 14px !important; border-radius: 10px; background: #15241c; border: 1px solid #2b4036 !important; margin-top: 14px;}
+.eco-status .prose {border: 0; padding: 0;}
+.eco-status .prose p {font-size: .87rem; margin: 0; overflow-wrap: anywhere;}
+.eco-steps {display: flex; gap: 16px; padding: 0; margin: 6px 0 22px; list-style: none;}
+.eco-steps li {display: flex; gap: 10px; align-items: flex-start; flex: 1; color: #c4d6cd; font-size: .88rem;}
+.eco-steps li > span {display: grid; place-items: center; flex: 0 0 26px; height: 26px; background: #203c2e; border: 1px solid #395f49; border-radius: 50%; color: #a0edc1; font-weight: 700;}
+.eco-steps p {margin: 2px 0; line-height: 1.5;}
+#eco-camera-feedback {padding: 12px 14px; border-radius: 10px; background: #192d22; color: #b9d1c2; line-height: 1.6; font-size: .85rem; margin: 0;}
+#eco-footer {text-align: center; padding: 8px 0 20px; color: #a4b9af; font-size: .78rem; line-height: 1.8;}
+#eco-footer span {padding: 0 8px; color: #72dfaa;}
+.gradio-container footer {display: none !important;}
+@media (max-width: 640px) {
+  #eco-shell {padding: 10px 2px; gap: 18px;}
+  #eco-intro {padding: 24px 20px; border-radius: 16px;}
+  #eco-intro h1 {overflow-wrap: anywhere;}
+  #eco-notice {padding: 12px 14px; font-size: .85rem;}
+  #eco-tabs [role="tablist"] button {flex: 1; padding: 10px 14px;}
+  .eco-workspace {gap: 20px !important;}
+  .eco-input-panel, .eco-result {padding: 18px !important;}
+  .eco-steps {flex-direction: column; gap: 10px; margin-bottom: 18px;}
+  .eco-empty {padding: 16px 0;}
+  .eco-actions > button {flex: 1 1 100% !important; width: 100%;}
+  #eco-footer span {display: block; height: 4px; visibility: hidden;}
+  .eco-logout button {width:100%!important;}
+}
+@media (prefers-reduced-motion: reduce) {
+  #eco-shell button {transition: none;}
+}
+
+#eco-upload button[aria-dropeffect] {min-height: 140px;}
+#eco-upload .file-preview {background: #192d22; color: #d4e4db;}
+@media (max-width: 640px) {
+  .gradio-container {padding: 12px 14px !important;}
+  #eco-shell {padding: 0;}
+  #eco-shell > .block {padding-inline: 0;}
+}
+/* Gradio replica algunas clases en el contenido de Markdown. */
+.eco-status .eco-status {padding: 0 !important; border: 0 !important; margin: 0; background: transparent;}
+#eco-shell > .block:has(> #eco-intro),
+#eco-shell > .block:has(> #eco-notice),
+#eco-shell > .block:has(> #eco-footer) {padding: 0 !important;}
+#eco-tabs [role="tablist"] button {min-height: 44px; padding: 10px 24px !important;}
+#eco-upload:has(table) {min-height: auto;}
+#eco-upload table {color: #d4e4db;}
+#eco-upload table td {color: #d4e4db;}

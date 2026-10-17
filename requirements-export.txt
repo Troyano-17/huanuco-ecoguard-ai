@@ -1,0 +1,7 @@
+-r requirements-production.txt
+# Solo conversión/verificación local. Evita descargar las ruedas CUDA de PyTorch.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0+cpu
+torchvision==0.23.0+cpu
+ultralytics==8.4.178
+onnx==1.19.0

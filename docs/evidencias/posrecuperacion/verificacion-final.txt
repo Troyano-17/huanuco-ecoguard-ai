@@ -1,0 +1,34 @@
+Archivos con SHA256 correcto: 83
+Respaldo dataset: SHA256 correcto
+{
+  "epocas": 100,
+  "accuracy_test": 0.9130434782608695,
+  "clases_matriz": [
+    "agua_contaminada",
+    "aire_contaminado",
+    "suelo_contaminado"
+  ],
+  "particiones": {
+    "train": 105,
+    "test": 23,
+    "val": 23
+  },
+  "distribucion_por_clase": {
+    "train": {
+      "aire_contaminado": 49,
+      "agua_contaminada": 26,
+      "suelo_contaminado": 30
+    },
+    "test": {
+      "aire_contaminado": 10,
+      "agua_contaminada": 6,
+      "suelo_contaminado": 7
+    },
+    "val": {
+      "aire_contaminado": 10,
+      "agua_contaminada": 6,
+      "suelo_contaminado": 7
+    }
+  },
+  "best_sha256": "57b2194e8cfb26de44eb93960193392965e4c46be3c75f8f22c81b5a37b7ed32"
+}

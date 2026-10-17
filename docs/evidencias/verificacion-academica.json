@@ -1,0 +1,19 @@
+{
+  "pptx": "docs/PRESENTACION_INNOBEST.pptx",
+  "diapositivas": 10,
+  "zip_crc": "correcto",
+  "xml": "parseable",
+  "relaciones_internas": "correctas",
+  "revision_visual": "pendiente: PowerPoint/LibreOffice no disponibles",
+  "tests": {
+    "ejecutados": 55,
+    "correctos": 50,
+    "omitidos_integracion_real": 5
+  },
+  "compilacion_python": "correcta",
+  "modelo_original": "no recuperado",
+  "atlas": "no configurado",
+  "render": "no publicado",
+  "dependencias_produccion": "instalacion bloqueada por acceso al indice; no hay Gradio/Pillow/ONNX Runtime instalados",
+  "dataset_sha256": "f17a403815f2d184c668ebda60c9e963916bef296522d98e70b43721d3ceeca5"
+}

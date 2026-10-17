@@ -1,0 +1,20 @@
+test_inclusive_boundary_and_unchanged_scores (test_acceptance_threshold.AcceptanceRule.test_inclusive_boundary_and_unchanged_scores) ... ok
+test_live_and_manual_alternation_clear_previous_and_isolate_sessions (test_acceptance_threshold.AcceptanceRule.test_live_and_manual_alternation_clear_previous_and_isolate_sessions) ... ok
+test_mapping_all_three_categories (test_acceptance_threshold.AcceptanceRule.test_mapping_all_three_categories) ... ok
+test_no_category_bars_or_advice_for_rejected_result (test_acceptance_threshold.AcceptanceRule.test_no_category_bars_or_advice_for_rejected_result) ... ok
+test_store_accepts_exact_boundary_with_original_scores (test_acceptance_threshold.AcceptanceRule.test_store_accepts_exact_boundary_with_original_scores) ... ok
+test_store_rejects_low_scores_and_wrong_category_before_connection (test_acceptance_threshold.AcceptanceRule.test_store_rejects_low_scores_and_wrong_category_before_connection) ... ok
+/usr/lib/python3.12/asyncio/base_events.py:726: ResourceWarning: unclosed event loop <_UnixSelectorEventLoop running=False closed=False debug=False>
+  _warn(f"unclosed event loop {self!r}", ResourceWarning, source=self)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.12/asyncio/base_events.py:726: ResourceWarning: unclosed event loop <_UnixSelectorEventLoop running=False closed=False debug=False>
+  _warn(f"unclosed event loop {self!r}", ResourceWarning, source=self)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_camera_buttons_stale_save_and_fresh_session (test_acceptance_threshold.AcceptanceUI.test_camera_buttons_stale_save_and_fresh_session) ... ok
+test_live_callback_alternation_and_restart (test_acceptance_threshold.AcceptanceUI.test_live_callback_alternation_and_restart) ... ok
+test_photo_accept_reject_reset_and_preview_clear (test_acceptance_threshold.AcceptanceUI.test_photo_accept_reject_reset_and_preview_clear) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.905s
+
+OK

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/scripts/exportar_onnx.py", line 69, in <module>
+    main()
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/scripts/exportar_onnx.py", line 23, in main
+    reference = Classifier(weights)
+                ^^^^^^^^^^^^^^^^^^^
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/scripts/inferencia.py", line 88, in __init__
+    import torch
+ModuleNotFoundError: No module named 'torch'

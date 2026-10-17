@@ -1,0 +1,19 @@
+{
+  "environment": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "frames": 69,
+  "source_images": 23,
+  "rss_loaded_mib": 186.84375,
+  "rss_after_mib": 198.68359375,
+  "peak_rss_mib": 216.1953125,
+  "predict_ms_mean": 6.4539689709014,
+  "predict_ms_median": 6.349837000016123,
+  "predict_ms_p95": 7.795368001097813,
+  "frame_total_ms_mean": 17.457292362688232,
+  "frame_total_ms_p95": 41.044234996661544,
+  "production_imports": {
+    "torch": false,
+    "ultralytics": false
+  },
+  "scope": "Proceso local WSL: FastAPI+Gradio+ONNX; 69 fotogramas, sin navegador/red/MongoDB ni servidor HTTP. No es una medición de Render."
+}

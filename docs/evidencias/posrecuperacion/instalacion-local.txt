@@ -1,0 +1,8 @@
+WARNING: The directory '/home/troyano/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in links: /tmp/ecoguard-wheelhouse
+Processing /tmp/ecoguard-wheelhouse/pillow-11.3.0-cp312-cp312-manylinux_2_27_x86_64.whl
+Processing /tmp/ecoguard-wheelhouse/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.whl
+Processing /tmp/ecoguard-wheelhouse/pymongo-4.18.1-cp312-cp312-manylinux_2_17_x86_64.whl
+Processing /tmp/ecoguard-wheelhouse/dnspython-2.8.0-py3-none-any.whl
+Installing collected packages: Pillow, numpy, dnspython, pymongo
+Successfully installed Pillow-11.3.0 dnspython-2.8.0 numpy-2.2.6 pymongo-4.18.1

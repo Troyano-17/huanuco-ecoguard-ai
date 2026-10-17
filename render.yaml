@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: huanuco-ecoguard-ai
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-production.txt && python scripts/verificar_modelo_render.py
+    startCommand: python scripts/servidor.py
+    healthCheckPath: /healthz
+    autoDeploy: false
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.13
+      - key: MODEL_PATH
+        value: models/best.onnx
+      - key: MONGODB_DB
+        value: ecoguard
+      - key: MONGODB_URI
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: SESSION_HOURS
+        value: '12'
+      - key: OMP_NUM_THREADS
+        value: '1'
+      - key: OPENBLAS_NUM_THREADS
+        value: '1'
+      - key: GRADIO_ANALYTICS_ENABLED
+        value: 'False'
+      - key: GRADIO_TEMP_DIR
+        value: /tmp/ecoguard

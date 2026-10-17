@@ -1,0 +1,4 @@
+b90eb5240038be75cea6b1477ef23665882abad69c126c7257a5578722812eef  models/best.onnx
+b24374fea80eb90015ae53ceca2673188104fc46b1acd506911c1f7273d5b178  models/best.json
+57b2194e8cfb26de44eb93960193392965e4c46be3c75f8f22c81b5a37b7ed32  entrega/original/train100/weights/best.pt
+005ecb8bd05c6f2bfba95d3deccdc2f9c112840fea398aae07807d15c8e8d72f  entrega/original/train100/weights/last.pt

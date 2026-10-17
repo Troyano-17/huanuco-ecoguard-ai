@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/scripts/app_gradio.py", line 130, in <module>
+    main()
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/scripts/app_gradio.py", line 119, in main
+    app, _ = build_app(args.weights)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/troyano/proyectos/huanuco-ecoguard-ai/scripts/app_gradio.py", line 23, in build_app
+    import gradio as gr
+ModuleNotFoundError: No module named 'gradio'

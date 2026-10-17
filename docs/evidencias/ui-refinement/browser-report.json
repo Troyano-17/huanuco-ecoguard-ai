@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "physical_mobile": "pending",
+  "checks": [
+    "desktop: carga, inferencia, barras, ancho responsive",
+    "phone-emulated: carga, inferencia, barras, ancho responsive",
+    "cámara sintética: iniciar, clasificación periódica, detener y liberar tracks",
+    "cámara a 320/390/768 px; limpiar, estado vacío, carga en español e historial no disponible"
+  ]
+}
